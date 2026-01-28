@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-core-concept',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './core-concept.component.css'
 })
 export class CoreConceptComponent {
-
+  @Input() coreConcepts: {id:number, title:string, description:string, img:string}[] = [];
+  
 }
