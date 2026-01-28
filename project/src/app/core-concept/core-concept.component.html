@@ -1,3 +1,5 @@
-<img src="{{ img }}" alt="Core Concept Image">
-<h2>{{ title }}</h2>
-<p>{{ description }}</p>
+<div class="concept-card">
+  <img [src]="concept.image" [alt]="concept.title">
+  <h3>{{ concept.title }}</h3>
+  <p>{{ concept.description }}</p>
+</div>
