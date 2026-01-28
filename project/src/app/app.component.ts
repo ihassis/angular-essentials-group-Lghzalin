@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { CoreConceptComponent } from './core-concept/core-concept.component';
 import { HeaderComponent } from './header/header.component';
 import { TabButtonComponent } from './tab-button/tab-button.component';
-import { CORE_CONCEPTS, EXAMPLES } from '../../data';
+import { CORE_CONCEPTS, EXAMPLES } from './data';
 
 @Component({
   selector: 'app-root',

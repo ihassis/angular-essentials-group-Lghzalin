@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CoreConcept } from '../../../data';  
+import { CoreConcept } from '../data';  
 
 @Component({
   selector: 'app-core-concept',
