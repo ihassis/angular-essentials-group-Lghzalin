@@ -1,4 +1,4 @@
-import { Component, EventEmitter,Output } from '@angular/core';
+import { Component, EventEmitter,Output,Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab-button',
@@ -8,6 +8,8 @@ import { Component, EventEmitter,Output } from '@angular/core';
   styleUrl: './tab-button.component.css'
 })
 export class TabButtonComponent {
+  @Input () texte:String="";
+  @Input () isSelected:boolean=false;
   @Output () tabSelected = new EventEmitter<string>();
   selectTab(tabName: string) {
     this.tabSelected.emit(tabName);
