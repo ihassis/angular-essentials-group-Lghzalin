@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  private elements = ['Fundamental', 'Core', 'Crucial'];
+  public element = this.getRandomElement();
+  getRandomElement():String {
+    const randomIndex = Math.floor(Math.random() * this.elements.length);
+    return this.elements[randomIndex];
+  }
 
 }

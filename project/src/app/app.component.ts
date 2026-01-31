@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { CoreConceptComponent } from './core-concept/core-concept.component';
 import { HeaderComponent } from './header/header.component';
 import { TabButtonComponent } from './tab-button/tab-button.component';
+import { CORE_CONCEPTS, EXAMPLES } from './data';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,13 @@ import { TabButtonComponent } from './tab-button/tab-button.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'project';
+  concepts = CORE_CONCEPTS;
+  examples = EXAMPLES;
+  
+  selectedTopic: string | null = null;
+
+  topics = ['components', 'jsx', 'props', 'state'];
+  selectTopic(topic: string) {
+    this.selectedTopic = topic;
+  }
 }

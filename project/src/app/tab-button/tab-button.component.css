@@ -1,0 +1,19 @@
+button {
+  background-color: white;
+  color: #a18aba; /* Text Accent */
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #1b082f; /* Hover Violet */
+  color: #ebe7ef; /* Text Primary */
+}
+
+button.active {
+  background-color: #7925d3; /* Active Violet */
+  color: #ebe7ef; /* Text Primary */
+}

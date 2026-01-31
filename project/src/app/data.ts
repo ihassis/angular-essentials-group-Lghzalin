@@ -20,7 +20,7 @@ export const CORE_CONCEPTS: CoreConcept[] = [
   {
     image: 'assets/jsx-ui.png',
     title: 'JSX',
-    description: 'Return JSX code to define the actual markup that will be rendered.'
+    description: 'Return JSX code to define the actual markup that will be rendered.                                                                                   '
   },
   {
     image: 'assets/config.png',
