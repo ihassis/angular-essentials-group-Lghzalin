@@ -1,0 +1,5 @@
+services:
+  angular-app:
+    build: .
+    image: angular-app-image
+    ports: [4000:4000]
